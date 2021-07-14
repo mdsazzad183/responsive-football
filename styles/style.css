@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    display: flex;
+    width: 1440px;
+    height: 677px;
+    background-color: #2D25A0; 
+}
+.heading{
+    display: grid;
+    grid-column-gap: 27px;
+}
+ h1{
+    color: white;
+    width: 485px;
+    height: 230px;
+    font-size: 64px;
+    font-weight: 700;
+    margin-left: 156px;
+    margin-top: 207px;
+}
+.border{
+    border: 1px ;
+    padding: 10px, 24px, 10px, 24px;
+    background-color:#E02C6D;
+    width: 168px;
+    height: 44px;
+    margin-left: 156px;
+}
+.border p{
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    padding-left: 24px;
+    top: 10px;
+}
+.banner{
+    width: 556px;
+    height: 438px;
+    margin-left: 102px;
+    margin-top: 145px;
+}
+.containar{
+    
+    background: #FFFFFF;
+}
+.players{
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    margin-left: 180px;
+    margin-right: 210px;
+}
+.player{
+    display: flex;
+    border: 1px solid white;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px;
+    height: 445px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 33px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player img{
+    width: 300px;
+    height: 256px;
+}
+.player-info{
+    width: 300px;
+    height: 160px;
+}
+.player-info p{
+    font-size: 16px;
+}
+.sign-up{
+    border: 1px solid darkslategray;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 165px;
+    margin-left: 5em;
+   
+    padding: 30px;
+    
+}
+.footer{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 213px;
+    margin-top: 158px;
+}
+
+.icon{
+    justify-content: center;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin-right: 156.94px;
+    margin-left: 156.94;
+    margin-top: 20px 0px;
+    }
+.copyright{
+    text-align: center;
+    margin-right: 80px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: normal;
+}
+@media only screen and (max-width:688px){
+    .containar{
+        width: 100%;
+    }
+    header, .players, .footer, .sign-up{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
